@@ -1,0 +1,16 @@
+{
+  "name": "remotework-plus",
+  "version": "1.0.0",
+  "description": "A modern, AI-driven website for RemoteWork+, an innovative platform designed to enhance real-time collaboration, team presence, and IT support in remote and hybrid work environments.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

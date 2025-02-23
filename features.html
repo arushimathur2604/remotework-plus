@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features | RemoteWork+</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .features-hero {
+            padding: 120px 0 60px;
+            background: linear-gradient(135deg, #EFF3F9 0%, #D5E0EC 100%);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 60px 0;
+        }
+        
+        .feature-detail {
+            padding: 30px;
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+        
+        .feature-detail:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 36px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .feature-detail h3 {
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+        
+        .demo-section {
+            background: var(--light-gray);
+            padding: 80px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">RemoteWork<span class="plus">+</span></a>
+            </div>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html" class="active">Features</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="auth.html" class="cta-button">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="features-hero">
+            <div class="container">
+                <h1>AI-Powered Features</h1>
+                <p>Discover how our cutting-edge AI technology transforms remote work collaboration</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="features-grid">
+                <div class="feature-detail">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>WorkPulse</h3>
+                    <p>Our AI-powered digital body language detection system helps teams understand and respond to non-verbal cues in virtual meetings, improving communication and collaboration.</p>
+                </div>
+                
+                <div class="feature-detail">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                    <h3>FlowSync</h3>
+                    <p>Adaptive workspaces that learn from your team's behavior and automatically adjust to optimize productivity and collaboration patterns.</p>
+                </div>
+                
+                <div class="feature-detail">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Smart Team Coordination</h3>
+                    <p>AI-driven scheduling and task management that considers team members' time zones, peak productivity hours, and workload for optimal coordination.</p>
+                </div>
+                
+                <div class="feature-detail">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure Collaboration</h3>
+                    <p>Enterprise-grade security with AI-powered threat detection and prevention for safe remote collaboration.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <div class="container">
+                <h2>See Our Features in Action</h2>
+                <p>Schedule a personalized demo to experience how RemoteWork+ can transform your remote work experience</p>
+                <div class="cta-group" style="margin-top: 30px;">
+                    <a href="#" class="primary-btn">Request Demo</a>
+                    <a href="#" class="secondary-btn">View Documentation</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Webinars</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RemoteWork+. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

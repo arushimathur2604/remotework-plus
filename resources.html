@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources | RemoteWork+</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/resources.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">RemoteWork<span class="plus">+</span></a>
+            </div>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="resources.html" class="active">Resources</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="auth.html" class="cta-button">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="resources-hero">
+            <div class="container">
+                <h1 class="fade-in">Explore AI-Powered Resources to Enhance Your Workflow</h1>
+                <p class="fade-in">Discover expert insights, AI-driven tools, and interactive learning materials to maximize your productivity.</p>
+                <div class="search-container fade-in">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="resource-search" placeholder="Search resources...">
+                        <div id="search-suggestions" class="search-suggestions"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="resources-grid container">
+            <!-- Blog & Insights -->
+            <div class="resource-card" data-aos="fade-up">
+                <div class="resource-header">
+                    <i class="fas fa-book-reader"></i>
+                    <h2>AI-Powered Blog & Insights</h2>
+                </div>
+                <div class="resource-content">
+                    <div class="blog-feed" id="blog-feed">
+                        <!-- Blog posts will be dynamically loaded here -->
+                    </div>
+                    <button class="load-more-btn" onclick="loadMorePosts()">Load More Posts</button>
+                </div>
+            </div>
+
+            <!-- Video Tutorials -->
+            <div class="resource-card" data-aos="fade-up">
+                <div class="resource-header">
+                    <i class="fas fa-video"></i>
+                    <h2>Video Tutorials & Webinars</h2>
+                </div>
+                <div class="resource-content">
+                    <div class="video-player">
+                        <div class="video-container" id="video-container">
+                            <!-- Video player will be loaded here -->
+                        </div>
+                        <div class="video-timestamps">
+                            <h3>Quick Navigation</h3>
+                            <ul id="timestamp-list">
+                                <!-- Timestamps will be dynamically loaded -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Whitepapers & Case Studies -->
+            <div class="resource-card" data-aos="fade-up">
+                <div class="resource-header">
+                    <i class="fas fa-file-alt"></i>
+                    <h2>Whitepapers & Case Studies</h2>
+                </div>
+                <div class="resource-content">
+                    <div class="whitepaper-grid" id="whitepaper-grid">
+                        <!-- Whitepapers will be dynamically loaded -->
+                    </div>
+                    <div class="recommendations">
+                        <h3>Recommended for You</h3>
+                        <div id="recommended-papers" class="recommended-papers">
+                            <!-- AI recommendations will appear here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Tools & Templates -->
+            <div class="resource-card" data-aos="fade-up">
+                <div class="resource-header">
+                    <i class="fas fa-tools"></i>
+                    <h2>Interactive AI Tools & Templates</h2>
+                </div>
+                <div class="resource-content">
+                    <div class="template-customizer">
+                        <h3>Customize Your Template</h3>
+                        <div class="template-options">
+                            <select id="template-type">
+                                <option value="meeting">Meeting Summary</option>
+                                <option value="workflow">Workflow Automation</option>
+                                <option value="task">Task Prioritization</option>
+                            </select>
+                            <select id="team-size">
+                                <option value="small">Small Team (2-10)</option>
+                                <option value="medium">Medium Team (11-50)</option>
+                                <option value="large">Large Team (50+)</option>
+                            </select>
+                        </div>
+                        <div id="template-preview" class="template-preview">
+                            <!-- Template preview will be shown here -->
+                        </div>
+                        <button class="generate-template-btn" onclick="generateTemplate()">Generate Template</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section fade-in">
+            <div class="container">
+                <h2>Unlock AI-Powered Productivity</h2>
+                <p>Maximize your efficiency with our AI-driven resources. Stay ahead with cutting-edge insights and tools.</p>
+                <a href="#" class="cta-button-glow">Get AI-Powered Resources</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Webinars</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RemoteWork+. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/resources.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions | RemoteWork+</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/solutions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">RemoteWork<span class="plus">+</span></a>
+            </div>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="solutions.html" class="active">Solutions</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="auth.html" class="cta-button">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="solutions-hero">
+            <div class="container">
+                <h1>AI-Powered Solutions for Seamless Collaboration</h1>
+                <p>Transform your remote work experience with intelligent, automated, and highly interactive solutions that enhance team productivity and streamline workflows.</p>
+            </div>
+        </section>
+
+        <section class="solutions-grid container">
+            <!-- Smart Meeting Summaries -->
+            <div class="solution-card" data-aos="fade-up">
+                <div class="solution-header">
+                    <i class="fas fa-calendar-check"></i>
+                    <h2>Smart Meeting Summaries & Transcriptions</h2>
+                </div>
+                <div class="solution-content">
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> AI automatically transcribes meetings and identifies key points</li>
+                        <li><i class="fas fa-check"></i> Generates concise takeaways for quick review</li>
+                        <li><i class="fas fa-check"></i> Detects action items and assigns follow-ups instantly</li>
+                    </ul>
+                    <div class="demo-container">
+                        <h3>Try AI Summary Demo</h3>
+                        <textarea id="meeting-notes" placeholder="Enter your meeting notes here..."></textarea>
+                        <button class="demo-button" onclick="generateSummary()">Generate Summary</button>
+                        <div id="summary-result" class="demo-result"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Task Prioritization -->
+            <div class="solution-card" data-aos="fade-up">
+                <div class="solution-header">
+                    <i class="fas fa-tasks"></i>
+                    <h2>Intelligent Task Prioritization</h2>
+                </div>
+                <div class="solution-content">
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> AI auto-prioritizes tasks based on urgency</li>
+                        <li><i class="fas fa-check"></i> Provides smart deadline recommendations</li>
+                        <li><i class="fas fa-check"></i> Automates reminders & follow-ups</li>
+                    </ul>
+                    <div class="demo-container">
+                        <h3>Task Priority Dashboard</h3>
+                        <canvas id="taskChart"></canvas>
+                        <div class="task-controls">
+                            <button class="demo-button" onclick="addTask()">Add Sample Task</button>
+                            <button class="demo-button" onclick="updatePriorities()">Update Priorities</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Chatbot -->
+            <div class="solution-card" data-aos="fade-up">
+                <div class="solution-header">
+                    <i class="fas fa-robot"></i>
+                    <h2>AI Chatbot Assistant</h2>
+                </div>
+                <div class="solution-content">
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> AI-powered responses in real time</li>
+                        <li><i class="fas fa-check"></i> Retrieves data from meeting notes & projects</li>
+                        <li><i class="fas fa-check"></i> Provides smart suggestions</li>
+                    </ul>
+                    <div class="demo-container">
+                        <div id="chat-container">
+                            <div id="chat-messages"></div>
+                            <div class="chat-input">
+                                <input type="text" id="user-message" placeholder="Ask a question...">
+                                <button onclick="sendMessage()" class="demo-button">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Analytics Dashboard -->
+            <div class="solution-card" data-aos="fade-up">
+                <div class="solution-header">
+                    <i class="fas fa-chart-line"></i>
+                    <h2>Collaboration Analytics</h2>
+                </div>
+                <div class="solution-content">
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Real-time engagement tracking</li>
+                        <li><i class="fas fa-check"></i> AI-driven sentiment analysis</li>
+                        <li><i class="fas fa-check"></i> Interactive performance dashboard</li>
+                    </ul>
+                    <div class="demo-container">
+                        <h3>Team Analytics Dashboard</h3>
+                        <canvas id="analyticsChart"></canvas>
+                        <div class="analytics-controls">
+                            <button class="demo-button" onclick="updateAnalytics()">Refresh Data</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Experience Next-Gen AI Collaboration</h2>
+                <p>Transform your team's productivity with intelligent, automated, and highly interactive solutions.</p>
+                <a href="#" class="cta-button-large">Start Free Trial</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Webinars</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RemoteWork+. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/solutions.js"></script>
+</body>
+</html>
