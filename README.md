@@ -4,7 +4,7 @@
 RemoteWork+ is an AI-driven remote work collaboration platform designed to enhance team productivity and communication in the digital workspace. This project was developed as part of the DebugIt Software Development Challenge.
 
 ## Live Demo
-[View Live Demo](https://arushimathur2604.github.io/DebugIt-Software-Development-Challenge/)
+[View Live Demo](https://remotework-plus.vercel.app/)
 
 ## Features
 
